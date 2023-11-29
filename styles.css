@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #000;
+}
+
+
+.contenedor-formulario {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.label-ingreso{
+    color: #fff;
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    
+}
+
+#continente-ingresado {
+    width: 45%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    color: #727272;
+    font-size: 16px;
+}
+
+#region-ingresada {
+    width: 45%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    color: #727272;
+    font-size: 16px;
+}
+
+button {
+    padding: 7px;
+    width: 100%;
+    background-color: #5f9ea0;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+#contenedor-reloj {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 40px;
+    text-align: end;
+    margin: 100px;
+    border: 3px solid #fff;
+    border-radius: 15px;
+}
+
+
+#zona {
+    font-size: 1.2rem;
+    color: darkgray;
+    border: none;
+    outline: none;
+    text-align: end;
+}
+
+#hora {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#fecha {
+    font-size: 1.2rem;
+    color: #fff;
+}

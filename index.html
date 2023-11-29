@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Incluimos el script de dayjs -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.4"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/es.js"></script>
+    <script>dayjs.locale('es')</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script>
+    <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/timezone.js"></script>
+    <script>dayjs.extend(window.dayjs_plugin_timezone)</script>
+
+    <script src="script.js" defer></script>
+
+    <title>Reloj</title>
+
+</head>
+
+<body>
+
+    <form class="contenedor-formulario" onsubmit="return false">
+        <label class="label-ingreso">Ingrese una zona horaria en inglés</label>
+        <select name="select" id="continente-ingresado">
+            <option value="" disabled selected>Seleccione un continente</option>
+            <option value="Africa">Africa</option>
+            <option value="America">America</option>
+            <option value="Antartida">Antartida</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+        </select>
+        <input type="text" id="region-ingresada" placeholder="Ingrese una región"></input>
+        <button type="button" onclick="actualizarReloj()">ACTUALIZAR</button>
+    </form>
+
+    <div id="contenedor-reloj">
+        <p id="zona"></p>
+        <p id="hora"></p>
+        <p id="fecha"></p>
+    </div>
+
+</body>
+
+</html>
